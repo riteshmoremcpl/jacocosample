@@ -53,8 +53,8 @@
     </target>
 
     <target name="compile" depends="init">
-        <javac srcdir="${src.dir}" includeantruntime="false" destdir="${classes.dir}" classpathref="classpath"  />
-        <javac srcdir="${test.dir}" includeantruntime="false" destdir="${classes.dir}" classpathref="classpath" />
+        <javac srcdir="${src.dir}" includeantruntime="false" debug="true" debuglevel="source,lines" destdir="${classes.dir}" classpathref="classpath"  />
+        <javac srcdir="${test.dir}" includeantruntime="false" debug="true" debuglevel="source,lines" destdir="${classes.dir}" classpathref="classpath" />
     </target>
 
        
